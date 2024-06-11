@@ -11,7 +11,7 @@ async function sendSms(){
     try {
         const message = await client.messages.create({
             body: 'This is sms',
-            from: '+15624576601',
+            from: '',
             to: process.env.PHONE_NUMBER
         })
         console.log(message.sid, "Message sent");
